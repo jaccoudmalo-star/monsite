@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Mon site</title>
-    <style>
+<style>
 body {
-    background-color: lightblue;
+    background-color: #0B3D0B;
     text-align: center; 
     font-family: Arial, sans-serif;
 }
@@ -16,10 +16,39 @@ img {
             width: 300px; /* largeur de l'image */
             border-radius: 10px; /* coins arrondis */
         }
+img:hover {
+    transform: scale(1.1); /* agrandit légèrement */
+    transition: 0.3s;       /* effet smooth */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+h1 {
+    animation: couleur 3s infinite alternate;
+}
+
+@keyframes couleur {
+    0% { color: red; }
+    50% { color: orange; }
+    100% { color: blue; }
+}
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: red;
+}
 </style>
 </head>
 
 <body>
+
+<nav>
+  <a href="#">Accueil</a> | 
+  <a href="#">À propos</a> | 
+  <a href="#">Contact</a>
+</nav>
 
 <h1>Ouais c'est Greg</h1>
 <p>C'est mon site WEB</p>
